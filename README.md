@@ -18,7 +18,7 @@ It had only been modified the files:
 - drivers/net/wireless/ath/ath9k/recv.c
 - drivers/net/wireless/ath/regd.c
 
-And the changes that it had been made,it was following the same changes that [lisovy](https://github.com/lisovy) had made in the
+And the changes that it had been made,it was following the same changes that @github/lisovy had made in the
 repository [CTU-IIG/802.11p-linux](https://github.com/CTU-IIG/802.11p-linux/commit/bf45e0160af428dac8893e48d506ac428fed16b2).
 
 ##Instructions
@@ -27,11 +27,11 @@ Copy the folder "drivers" in your onw kernel (4.2.8), it is the only way to inst
 with the proper configuration.
 
 - Default flags for ath9k driver modules, they could be find in:
-Device Drivrs > Network device support > Wireless LAN > Atheros Wireless Cards
--You must add the OCB mode support to the mac80211 subsytem. Activating the debugging mode of HT, STATION, IBSS and OCB. These flags could be find in:
-Networking support > Wireless > Select mac80211 debugging features
-*Verbose station debugging - "CONFIG_MAC80211_STA_DEBUG=y"
-*Verbose HT debugging - "CONFIG_MAC80211_HT_DEBUG=y"
-*Verbose OCB debugging - "CONFIG_MAC80211_OCB_DEBUG=y"
-*Vebose IBSS debugging - "CONFIG_MAC80211_IBSS_DEBUG=y"
+  - **Device Drivers > Network device support > Wireless LAN > Atheros Wireless Cards**
+- You must add the OCB mode support to the mac80211 subsytem. Activating the debugging mode of HT, STATION, IBSS and OCB. These flags could be find in:
+  - **Networking support > Wireless > Select mac80211 debugging features**
+    - Verbose station debugging - "CONFIG_MAC80211_STA_DEBUG=y"
+    - Verbose HT debugging - "CONFIG_MAC80211_HT_DEBUG=y"
+    - Verbose OCB debugging - "CONFIG_MAC80211_OCB_DEBUG=y"
+    - Vebose IBSS debugging - "CONFIG_MAC80211_IBSS_DEBUG=y"
 
