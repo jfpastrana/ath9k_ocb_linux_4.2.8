@@ -23,6 +23,15 @@ repository [CTU-IIG/802.11p-linux](https://github.com/CTU-IIG/802.11p-linux/comm
 
 ##Instructions
 
-Copy the folder "drivers" in your onw kernel (4.2.8) it is the only way to install them. After this, you can compile the kernel
-with the properly configuration.
+Copy the folder "drivers" in your onw kernel (4.2.8), it is the only way to install them. After this, you can compile the kernel
+with the proper configuration.
+
+- Default flags for ath9k driver modules, they could be find in:
+Device Drivrs > Network device support > Wireless LAN > Atheros Wireless Cards
+-You must add the OCB mode support to the mac80211 subsytem. Activating the debugging mode of HT, STATION, IBSS and OCB. These flags could be find in:
+Networking support > Wireless > Select mac80211 debugging features
+*Verbose station debugging - "CONFIG_MAC80211_STA_DEBUG=y"
+*Verbose HT debugging - "CONFIG_MAC80211_HT_DEBUG=y"
+*Verbose OCB debugging - "CONFIG_MAC80211_OCB_DEBUG=y"
+*Vebose IBSS debugging - "CONFIG_MAC80211_IBSS_DEBUG=y"
 
